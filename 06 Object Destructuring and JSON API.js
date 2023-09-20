@@ -6,7 +6,7 @@
 
 // * What is API>>  Jab Apna Kaam Kisi aur ke sir pe Dalna ho.Haha.(Why JSON>>json object Notation ,API responces in terms of JSON)
 
-// !JSON Object(Two Formats)
+// !JSON Object(Two Formats)(there are many JSON fomatter which formats our JSON for better understanding)
 
 // {
 //     "firstName": "Prashant",
