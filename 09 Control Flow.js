@@ -32,12 +32,18 @@
 // console.log("2"==2);
 
 // console.log(''==0,""===0,""==[]);
+console.log(undefined==0,undefined==1);
 
 console.log(0==[],0=="0","0"==[]);
 
 // ! Nullish Coelscing operator and Ternary Operator.
 let b=10 ?? 20;
 let a=null ?? 11 ??15;
+
 console.log(a,b)
 
 let res=(5>4)?console.log("true"):console.log("false");
+
+
+
+//
