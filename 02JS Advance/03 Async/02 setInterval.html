@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <button id="btn1">start</button>
+    <button id="btn2">stop</button>
+    <script>
+        let heading=document.getElementsByTagName("h1")[0];
+        let count=0;
+        let id;
+        document.querySelector("#btn1").addEventListener("click",()=>{
+            id=setInterval(()=>{
+            count%2==0?heading.style.color="blue":heading.style.color="lightblue"
+            count++;
+        },2000)
+        })
+        document.querySelector("#btn2").addEventListener("click",()=>{
+            clearInterval(id);
+        })
+    </script>
+</body>
+</html>

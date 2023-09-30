@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+</head>
+<body>
+    <ul id="ul">
+        <li id="id1">list1</li>
+        <li id="id2">list2</li>
+        <li id="id3">list3</li>
+        <li id="id4">list4</li>
+    </ul>
+    <a href="https://google.com">Google</a>
+    <script>
+        //! pass true ,then ,event capturing or false is default event bubbling.
+        const ul=document.getElementById("ul");
+        ul.addEventListener("click",()=>{
+            console.log("clicked on to parent")
+        },true)
+        const list1=document.querySelector("#id1");
+        const funcReference=function(event){
+            console.log("clicked on List1");
+            console.log(event)//? event object 
+            list1.style.cursor="pointer"
+        }
+        list1.addEventListener("click",funcReference,true);
+    </script>
+</body>
+</html>
