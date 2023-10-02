@@ -8,7 +8,7 @@ let obj={
 let obj2={
     name:"binu"
 };
-// fucntion borrowing method of others canbe used with any object using call ,apply and bind
+// fucntion borrowing method of others can be used with any object using call ,apply and bind
 
 // obj.fullname.call(obj2,"kumar",24) // attaching the obj method to other object.
 // obj.fullname.apply(obj2,["kumar",24])// pass arguments in an array.
