@@ -34,3 +34,9 @@ Array.prototype.test2=function(){
 }
 
 arr.test2()
+
+String.prototype.trueLength=function (){
+    console.log(this);
+    console.log(`Actual Length ${this.trim().length}`)
+}
+str.trueLength()
