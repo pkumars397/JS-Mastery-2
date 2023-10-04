@@ -15,3 +15,5 @@ class User{
 
 const user1=new User("pkumars397@gmail.com","iksjkfjk");
 console.log(user1.email)
+
+
